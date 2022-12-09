@@ -67,6 +67,27 @@ To use command :
 touch [filename...]
 ```
 
+## **Compare Command**
+------------------
+
+I found `diff` command or `Compare-Object` in **Powershell** is too long and isn't suitable for competitive programming. Therefore I create this command to compare and show the differences between two files (difference at which line,...). If you use **Command Prompt**, you can use `fc` command instead.
+
+To use command :
+
+```sh
+cf [filename1] [filename2]
+```
+
+Result :
+
+```sh
+Two files are different:
+[filename1]:
+	[line]| [str1]
+[filename2]:
+	[line]| [str2]
+```
+
 ## **More**
 
 -------
