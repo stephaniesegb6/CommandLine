@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+#define MOD 1000000007
+
+using namespace std;
+
+const int inf = 1e9 + 7;
+
+int main(){
+
+	return 0;
+}

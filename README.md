@@ -67,6 +67,38 @@ To use command :
 touch [filename...]
 ```
 
+### **More for Commpetitive Programmer**
+
+Touch command also support for competitive programming such that you can create new file with your template.
+
+This feature is just available for **C/C++** language.
+
+Command :
+
+```sh
+touch [filename...] [--option]
+```
+
+- `--cpp` for **C/C++** language.
+
+To config the template, go to `[direction]/bin/templateTouch/` and edit file config of the language which you use according to your template.
+
+For example the template of **C/C++** language will in file `./cpp.txt`:
+
+```c++
+/*./bin/templateTouch/cpp.txt*/
+#include <bits/stdc++.h>
+#define MOD 1000000007
+
+using namespace std;
+
+const int inf = 1e9 + 7;
+
+int main(){
+	return 0;
+}
+```
+
 ## **Compare Command**
 ------------------
 

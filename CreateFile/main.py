@@ -1,5 +1,5 @@
 import argparse
-
+import copyTemplate
 
 main_parser = argparse.ArgumentParser(
 	description = "Create a new file"
@@ -13,14 +13,23 @@ main_parser.add_argument(
 	help = "Name file will be created"
 )
 
-
+main_parser.add_argument(
+	"--cpp",
+	dest = "copyTemplate",
+	action = "store_const",
+	const = copyTemplate.templateCpp,
+	help = "make file .cpp with your template."
+)
 
 def main():
-	files : list[str] = main_parser.parse_args().File
+	args = main_parser.parse_args()
+	files : list[str] = args.File
 
 	for file in files:
 		try:
 			f = open(file, 'x')
+			if(args.copyTemplate != None):
+				args.copyTemplate(f)
 			f.close()
 		except Exception as e:
 			print(e)
