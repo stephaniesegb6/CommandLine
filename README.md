@@ -25,15 +25,13 @@ To use the command global, you have to add the direction of bin folder to `PATH`
 **Command Prompt**:
 
 ```sh
-set Path=%Path%;%DIR%\bin\
+set Path=%Path%;[direction]\bin\
 ```
 
 **Powershell**:
 ```sh
-$env:Path += ';%DIR%\bin\'
+$env:Path += ';[direction]\bin\'
 ```
-
-( `%DIR%` is the direction where you install )
 
 ## **Compile command**
 
