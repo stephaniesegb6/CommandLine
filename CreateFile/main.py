@@ -1,5 +1,13 @@
+import os
+import sys
 import argparse
 import copyTemplate
+
+if getattr(sys, 'frozen', False):
+	path = os.path.dirname(sys.executable)
+else:
+	path = os.path.dirname(__file__)
+template = copyTemplate.copyTemplate(path)
 
 main_parser = argparse.ArgumentParser(
 	description = "Create a new file"
@@ -17,7 +25,7 @@ main_parser.add_argument(
 	"--cpp",
 	dest = "copyTemplate",
 	action = "store_const",
-	const = copyTemplate.templateCpp,
+	const = template.templateCpp,
 	help = "make file .cpp with your template."
 )
 
@@ -29,6 +37,7 @@ def main():
 		try:
 			f = open(file, 'x')
 			if(args.copyTemplate != None):
+				# print()
 				args.copyTemplate(f)
 			f.close()
 		except Exception as e:

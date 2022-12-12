@@ -1,9 +1,9 @@
-import os
+class copyTemplate:
+	def __init__(self, path):
+		self.path = path
 
-currentDir = os.path.dirname(os.path.realpath(__file__))
-
-def templateCpp(file):
-	source = open(f"{currentDir}/templateTouch/cpp.txt", "r")
-	for line in source:
-		file.writelines(line)
+	def templateCpp(self, file):
+		source = open(f"{self.path}/templateTouch/cpp.txt", "r")
+		for line in source:
+			file.writelines(line)
 
