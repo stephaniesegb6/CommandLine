@@ -1,3 +1,6 @@
+//#pragma gcc optimize("Ofast")
+//#pragma GCC optimization("Ofast")
+//#pragma optimize(Ofast)
 #include <bits/stdc++.h>
 #define MOD 1000000007
 
@@ -5,7 +8,18 @@ using namespace std;
 
 const int inf = 1e9 + 7;
 
+void open(){
+	if(fopen("input.inp", "r")){
+		freopen("input.inp", "r", stdin);
+		//freopen("output.inp", "w", stdout);
+	}
+}
+
 int main(){
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+	open();
 
 	return 0;
 }
