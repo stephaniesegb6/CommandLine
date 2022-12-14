@@ -125,7 +125,7 @@ This command counts how long it will take your program to run.
 Command :
 
 ```sh
-time [filename]
+timer [filename]
 ```
 
 ## **More**
