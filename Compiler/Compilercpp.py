@@ -15,4 +15,6 @@ class Compiler:
 		command += f"-o {self.name}.exe"
 		# print(command)
 		os.system(command)
-		os.system(f"{self.name}.exe")
+		print("Finish compiling!")
+		print("Running...")
+		os.system(f"time {self.name}.exe")
