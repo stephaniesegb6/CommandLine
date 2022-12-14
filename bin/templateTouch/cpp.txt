@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const int inf = 1e9 + 7;
+const long long inf = 2e18;
 
 void open(){
 	if(fopen("input.inp", "r")){
