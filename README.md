@@ -118,6 +118,16 @@ Two files are different:
 	[line]| [str2]
 ```
 
+## **Time Counting Command**
+
+This command counts how long it will take your program to run.
+
+Command :
+
+```sh
+time [filename]
+```
+
 ## **More**
 
 -------
