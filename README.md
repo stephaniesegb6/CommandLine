@@ -39,7 +39,7 @@ $env:Path += ';[direction]\bin\'
 
 Compile command help us to compile and run file `.exe` immediately. It reduces the commands you have to compile and run.
 
-Up to now, `compile` just available for **C/C++** Language.
+Up to now, supported language is **C/C++**.
 
 We have to install one of these compilers :
 - For **C/C++** :
