@@ -17,13 +17,13 @@ class CompilerCpp(Compiler):
 		command = "g++ "
 		for i in range(len(self.files)):
 			command += f"{self.files[i]} "
-		command += f"-o {self.name}.exe"
+		command += f"-o {self.name}.exe -std=c++11"
 		# print(command)
 		os.system(command)
 		print("Finish compiling!")
 	def run(self):
 		print("Running...")
-		os.system(f"timer {self.name}.exe")
+		os.system(f"timer .\{self.name}.exe")
 
 def findLanguageOfFile(file : str):
 	if(file[len(file) - 4 : len(file)] == '.cpp'):
