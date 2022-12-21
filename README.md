@@ -120,6 +120,8 @@ Two files are different:
 
 ## **Time Counting Command**
 
+---------------------
+
 This command counts how long it will take your program to run.
 
 Command :
@@ -127,6 +129,10 @@ Command :
 ```sh
 timer [filename]
 ```
+
+## Note
+- There will be an error about `gcc` compiler when you use `timer` command and related command.
+- To fix that bug, you should compile again file `timecpp.cpp` in folder `.\TimeCount\C++Source\` by your compiler, move file `.exe` to folder `.\bin\C++Source\`
 
 ## **More**
 
