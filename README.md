@@ -30,7 +30,7 @@ set Path=%Path%;[direction]\bin\
 
 **Powershell**:
 ```sh
-$env:Path += ';[direction]\bin\'
+$env:Path += '[direction]\bin\'
 ```
 
 ## **Compile command**
