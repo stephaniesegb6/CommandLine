@@ -17,7 +17,7 @@ class CompilerCpp(Compiler):
 		command = "g++ "
 		for i in range(len(self.files)):
 			command += f"{self.files[i]} "
-		command += f"-o {self.name}.exe -std=c++11"
+		command += f"-o {self.name}.exe -std=c++11 -static-libgcc -static-libstdc++"
 		# print(command)
 		os.system(command)
 		print("Finish compiling!")
